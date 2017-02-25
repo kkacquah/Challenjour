@@ -32,51 +32,51 @@
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@android:drawable/ic_lock_lock"
-        android:id="@+id/imageButton"
-        android:layout_marginTop="34dp"
-        android:layout_below="@+id/button1"
-        android:layout_centerHorizontal="true" />
-
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         app:srcCompat="@android:drawable/alert_dark_frame"
-        android:layout_below="@+id/imageButton"
-        android:layout_toRightOf="@+id/text"
-        android:layout_toEndOf="@+id/text"
-        android:layout_marginTop="17dp"
-        android:id="@+id/imageButton2" />
-
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@android:drawable/alert_dark_frame"
-        android:layout_alignBottom="@+id/imageButton2"
-        android:layout_toRightOf="@+id/button1"
-        android:layout_toEndOf="@+id/button1"
-        android:layout_marginLeft="20dp"
-        android:layout_marginStart="20dp"
-        android:id="@+id/imageButton3" />
-
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@android:drawable/alert_dark_frame"
-        android:layout_below="@+id/imageButton2"
-        android:layout_alignRight="@+id/imageButton"
-        android:layout_alignEnd="@+id/imageButton"
-        android:layout_marginTop="29dp"
-        android:id="@+id/imageButton4" />
+        android:id="@+id/imageButton3"
+        android:layout_above="@+id/imageButton4"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="19dp"
+        android:layout_marginEnd="19dp" />
 
     <TextView
         android:text="Aerobic Health "
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/imageButton"
-        android:layout_toLeftOf="@+id/imageButton2"
-        android:layout_toStartOf="@+id/imageButton2"
         android:id="@+id/textView"
-        android:layout_above="@+id/imageButton2" />
+        android:layout_alignTop="@+id/imageButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="31dp" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/alert_dark_frame"
+        android:layout_marginTop="37dp"
+        android:id="@+id/imageButton4"
+        android:layout_below="@+id/imageButton2"
+        android:layout_toRightOf="@+id/button1"
+        android:layout_toEndOf="@+id/button1" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/alert_dark_frame"
+        android:layout_marginTop="41dp"
+        android:id="@+id/imageButton2"
+        android:layout_below="@+id/imageButton"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/ic_lock_lock"
+        android:id="@+id/imageButton"
+        android:layout_marginTop="19dp"
+        android:layout_below="@+id/button1"
+        android:layout_toRightOf="@+id/imageButton2"
+        android:layout_toEndOf="@+id/imageButton2" />
 
 </RelativeLayout>

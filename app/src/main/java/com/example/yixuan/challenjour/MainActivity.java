@@ -6,11 +6,12 @@ import android.view.View;
 import android.widget.Button;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 
 public class MainActivity extends AppCompatActivity {
     //list of string fileNames for each individual graphic
     ArrayList<String> bodyGraphics, financeGraphics;
-
+    HashMap<String, record> dictionary;
 
     //example code for button
     int index = 0;
@@ -32,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void graphicOnClick(View v){
-        //
+        //z
         textButtonOnClick(v);
     }
     public void textButtonOnClick(View v){
@@ -45,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
     }
     public void alertsOnClick(View v){
         //what happens when user clicks on alerts button--> take to alert/quest/tip pages
-        takeToPage(alert);
+        //takeToPage(alert);
     }
 
     public void showMoreOnClick(View v){
@@ -54,7 +55,10 @@ public class MainActivity extends AppCompatActivity {
     }
     public void showReleventData(View v){
         //given the graphic and the specific part of your finances and or fitness, display the relavent data
-        System.out.print("Not Implemented");
+        //fetch what element you are on right now
+
+        //change the display of score at top of screen
+        //expand/compress the dropdown menu
     }
 
     public void takeToPage(View v){
@@ -75,6 +79,16 @@ public class MainActivity extends AppCompatActivity {
         //Have fun with this one Chase thanks *thumbs up*
     }
 
+    public void refreshAnalytics(){
+        //periodically and also on demand refresh how analytics
+        generateAnalytics();
+        //if person has crossed certain threshholds, send notifications
+        checkNotifications();
+    }
+
+    public void checkNotifications(){
+
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

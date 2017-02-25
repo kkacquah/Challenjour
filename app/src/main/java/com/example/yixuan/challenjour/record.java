@@ -14,22 +14,6 @@ public class record {
     String name, graphicName;
     String info, moreInfo;
 
-    public record(){
-        score = 0;
-        name = graphicName = info = moreInfo = "";
-        metrics = new HashMap<String, Double>();
-    }
-    public record(String name, String graphicName){
-        this.name = name;
-        this.graphicName = graphicName;
-        score = 0;
-        metrics = new HashMap<String, Double>();
-    }
-    public record(int score, String name, String graphicName){
-        this.name = name;
-        this.graphicName = graphicName;
-        this.score = score;
-    }
     public Map<String, Double> getMetrics(){
         return metrics;
     }

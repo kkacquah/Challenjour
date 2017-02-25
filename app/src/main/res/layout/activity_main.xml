@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
@@ -13,5 +14,69 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:text="Suh dude"
+        android:id="@+id/text" />
+
+    <Button
+        android:text="Suh Dude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button1"
+        android:layout_marginLeft="62dp"
+        android:layout_marginStart="62dp"
+        android:onClick="onButtonClick"
+        android:layout_below="@+id/text"
+        android:layout_toRightOf="@+id/text"
+        android:layout_toEndOf="@+id/text" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/ic_lock_lock"
+        android:id="@+id/imageButton"
+        android:layout_marginTop="34dp"
+        android:layout_below="@+id/button1"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/alert_dark_frame"
+        android:layout_below="@+id/imageButton"
+        android:layout_toRightOf="@+id/text"
+        android:layout_toEndOf="@+id/text"
+        android:layout_marginTop="17dp"
+        android:id="@+id/imageButton2" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/alert_dark_frame"
+        android:layout_alignBottom="@+id/imageButton2"
+        android:layout_toRightOf="@+id/button1"
+        android:layout_toEndOf="@+id/button1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:id="@+id/imageButton3" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/alert_dark_frame"
+        android:layout_below="@+id/imageButton2"
+        android:layout_alignRight="@+id/imageButton"
+        android:layout_alignEnd="@+id/imageButton"
+        android:layout_marginTop="29dp"
+        android:id="@+id/imageButton4" />
+
+    <TextView
+        android:text="Aerobic Health "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageButton"
+        android:layout_toLeftOf="@+id/imageButton2"
+        android:layout_toStartOf="@+id/imageButton2"
+        android:id="@+id/textView"
+        android:layout_above="@+id/imageButton2" />
+
 </RelativeLayout>
